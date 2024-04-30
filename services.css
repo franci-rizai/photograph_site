@@ -1,0 +1,11 @@
+.sec-services img{
+    width: 400px;
+}
+
+.sec-services{
+    background-color: rgba(86, 227, 227, 0.1);
+    margin-top: 7em;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
