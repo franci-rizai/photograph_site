@@ -1,0 +1,35 @@
+.commerce-div{
+    
+    margin: auto;
+    margin-top: 5em;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: rgba(187, 193, 193, 0.1);
+    line-height: 2;
+    border-radius: 10px;
+    min-height: 330px;
+    
+  
+}
+
+.commerce-div h1{
+    font-family: yanone;
+    font-weight: normal;
+    letter-spacing: 7px;
+    font-style: italic;
+}
+
+.commerce-div p:nth-child(4){
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+/* FOR THE ABOUT HTML PAGE NOW  */
+
+
+

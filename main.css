@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
  
    
@@ -5,6 +8,15 @@ body{
   
     margin: 0;
     
+}
+
+@font-face {
+    font-family: dancing ;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: yanone ;
+    src: url(fonts/YanoneKaffeesatz-VariableFont_wght.ttf);
 }
 
 .div-first{
@@ -18,20 +30,54 @@ height: 100vh;
 }
 
 header{
+    font-family: dancing;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
    
 
 }
 
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 3em;
+    font-size: 1.1em;
+    
+}
+
+header ul li{
+    position: relative;
+    cursor: pointer;
+}
+
+main li::after{
+    content: "";
+    position: absolute;
+    width: 0;
+   height: 0.1px;
+   background-color: black;
+   bottom: 0;
+   left: 0;
+   transition: 0.2s;
+
+
+}
+main li:hover:after{
+    width: 100%;
+    transition: 0.2s;
+}
+
+
 header img{
-    width: 12%;
+    width: 40%;
 }
 
 .main-div{
-    background-image: url('images/test.jpg');
+    background-image: url('images/sant.png');
      background-repeat: no-repeat;
      width: 100%;
     height: 100%;
@@ -57,9 +103,7 @@ font-size: 3em;
 
 /* button */
 
-html, body {
-    height: 100%;
-  }
+
   
   .wrap {
     height: 100%;
@@ -113,33 +157,6 @@ html, body {
     opacity: 1;
   }
   
-  button::after {
-    content: '';
-    width: 30px; height: 30px;
-    border-radius: 100%;
-    border: 6px solid #16cdcd;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring 1.5s infinite;
-  }
-  
-  button:hover::after, button:focus::after {
-    animation: none;
-    display: none;
-  }
-  
-  @keyframes ring {
-    0% {
-      width: 30px;
-      height: 30px;
-      opacity: 1;
-    }
-    100% {
-      width: 200px;
-      height: 200px;
-      opacity: 0;
-    }
-  }
+ 
+
+ 

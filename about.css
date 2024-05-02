@@ -1,0 +1,28 @@
+.about-div{
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: rgba(202, 209, 210, 0.2);
+    line-height: 1.5;
+    border-radius: 100px;
+    min-height: 500px;
+   
+}
+
+
+
+h1 {
+    color: rgb(83, 82, 81);
+}
+.about-div img{
+    width: 250px;
+    border-radius: 100%;
+}
+
+p{
+    width: 60%;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
