@@ -1,18 +1,29 @@
 .sec-services img{
-    width: 400px;
+    max-width: 400px;
 }
 
 .sec-services{
-    background-color: rgba(187, 193, 193, 0.1);
+    background-color: hsl(168, 100%, 50%,0.1);
     margin-top: 7em;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3,1fr);
     column-gap: 2em;
    
+   
 
 
 }
+.div-services{
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-style: italic;
+    line-height: 1.5;
+    border-right: 1px solid rgb(25, 148, 201);
+    border-bottom:1px solid rgb(25, 148, 201);
+    padding: 15px;
+}
+
 
 @media only screen and (max-width: 1300px) {
    .sec-services{
@@ -24,5 +35,14 @@
     
    }
   }
+  @media only screen and (max-width: 500px) {
+
+    
+        .sec-services img{
+            max-width: 320px;
+        }
+     
+    
+   }
 
 
