@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="gallery.css">
 
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
+  
 <main class="div-first">
     <header>
         <div>
             <img src="images/logo.png" alt="logo">
-        </div><
-<ul>
+        </div>
+<ul class="big-menu-ul">
     <li><a style="text-decoration:none; color:black" href="main.html">HOME</a></li>
     <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
     
@@ -26,7 +28,31 @@
 </ul>
 
 
+
+<div class="spans-div">
+
+  <i class="fa-solid fa-bars"></i>
+ 
+
+    <ul class="ham-menu-ul">
+      <li><a style="text-decoration:none; color:black" href="main.html">HOME</a></li>
+      <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
+      
+      <li><a style="text-decoration:none; color:black" href="about.html">ABOUT</a></li>
+     
+  </ul>
+  
+
+
     </header>
+    <script> 
+     const hamMenu = document.querySelector('.fa-bars');
+     const menuList = document.querySelector('.ham-menu-ul')
+     hamMenu.addEventListener('click', () => {
+      menuList.classList.toggle('active');
+     })
+    
+    </script>
 <div class="main-div">
     
 

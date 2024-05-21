@@ -20,6 +20,7 @@ body{
 }
 
 .div-first{
+  
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,6 +31,8 @@ height: 100vh;
 }
 
 header{
+  
+  
     font-family: dancing;
     width: 100%;
     display: flex;
@@ -39,7 +42,7 @@ header{
 
 }
 
-header ul{
+header .big-menu-ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,12 +52,56 @@ header ul{
     
 }
 
-header ul li{
+header .big-menu-ul li{
     position: relative;
     cursor: pointer;
+  
 }
 
-main li::after{
+.spans-div{
+  
+  cursor: pointer;
+  display:none;
+  
+ 
+}
+.ham-menu-ul{
+  
+ 
+  background-color: rgb(255, 255, 255,0.97);
+  top: 80px;
+ right: 0;
+ left: 0;
+ border-radius: 10px;
+ opacity: 0;
+ transition: 0.3s;
+  position: absolute;
+  text-align: center;
+ 
+  list-style-type: none;
+}
+.ham-menu-ul li{
+  
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+.fa-bars{
+  
+font-size: 2.5em;
+color: rgb(75, 117, 142);
+}
+
+.ham-menu-ul.active{
+transition: 0.3s;
+opacity: 1;
+}
+
+
+main .big-menu-ul li::after{
     content: "";
     position: absolute;
     width: 0;
@@ -66,14 +113,14 @@ main li::after{
 
 
 }
-main li:hover:after{
+main .big-menu-ul li:hover:after{
     width: 100%;
     transition: 0.2s;
 }
 
 
 header img{
-    width: 40%;
+    width: 150px;
 }
 
 .main-div{
@@ -160,3 +207,19 @@ font-size: 3em;
  
 
  
+
+  @media only screen and (max-width: 700px) {
+  
+    header .big-menu-ul{
+      display: none;
+    }
+   
+    
+    
+    .spans-div{
+      display: block;
+    }
+    .slogan-main{
+      font-size: 0.7em;
+    }
+  }
