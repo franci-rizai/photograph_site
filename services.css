@@ -3,7 +3,8 @@
 }
 
 .sec-services{
-    background-color: hsl(168, 100%, 50%,0.1);
+    background-color: hsla(180, 1%, 77%, 0.1);
+
     margin-top: 7em;
     display: grid;
     place-items: center;
@@ -25,7 +26,7 @@
 }
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1600px) {
    .sec-services{
     display: flex;
     flex-wrap: wrap;

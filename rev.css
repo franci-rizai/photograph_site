@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+.rev-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+figure.snip1390 {
+    
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+ 
+  width: 90%;
+  max-width: 100%;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 70%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+figure.snip1390 figcaption {
+  width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 500;
+}
+figure.snip1390 h2 {
+  color: #776b6b;
+}
+figure.snip1390 h4 {
+  color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+
+    letter-spacing: 2px;
+    line-height: 1.4;
+  font-size: 1.4em;
+  padding: 45px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  
+  position: relative;
+}
+
+figure.snip1390 .profile {
+  width: 200px;
+ 
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+ 
+}
+.stars{
+    font-size: 2em;
+}
+
+.title-testim{
+    letter-spacing: 2px;
+    font-size: 2.5em;
+   font-family: dancing;
+   color: rgb(57, 62, 62);
+   
+}
