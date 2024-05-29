@@ -20,11 +20,15 @@
     font-family: sans-serif;
     font-style: italic;
     line-height: 1.5;
-    border-right: 1px solid rgb(25, 148, 201);
+    border-right: 1px solid rgb(255, 0, 157);
     border-bottom:1px solid rgb(25, 148, 201);
     padding: 15px;
 }
 
+.div-services img{
+    object-fit: cover;
+        aspect-ratio: 16/9;
+}
 
 @media only screen and (max-width: 1600px) {
    .sec-services{

@@ -6,7 +6,7 @@
 
 .grid-container {
     columns: 5 200px;
-    column-gap: 1rem;
+    column-gap: 3rem;
     width: 90%;
     margin: 0 auto;
 }
@@ -23,7 +23,7 @@
 
 
 .grid-container div img {
-    width: 100%;
+    width: 130%;
     
     border-radius: 5px;
     transition: all 0.25s ease-in-out;
