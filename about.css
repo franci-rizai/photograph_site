@@ -1,29 +1,35 @@
 .about-div{
    
-    width: 80%;
-    margin: auto;
-    letter-spacing: 1px;
-    text-align: center;
-    background-color: rgba(202, 209, 210, 0.2);
-    line-height: 1.5;
-    border-radius: 100px;
+    width: 100%;
+   
     
+    line-height: 1.5;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+
    
 }
+.photo{
+    animation: slide-down 1.5s     ease-in-out;
 
-
-
-h1 {
-    color: rgb(83, 82, 81);
-}
-.about-div img{
-    width: 250px;
-    border-radius: 100%;
 }
 
-p{
+  
+
+
+
+
+.texts{
+    animation: slide-up 2s     ease-in-out;
+
     width: 60%;
-    margin: auto;
-    font-family: sans-serif;
+    background-color: rgb(224, 132, 132,0.1);
+
+    border-radius: 20px;
+    padding: 2em;
+    letter-spacing: 2px;
+    font-family:sans-serif;
     font-size: 1.1em;
 }

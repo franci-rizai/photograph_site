@@ -2,6 +2,8 @@
 .gallery-about{
     margin: auto;
     margin-top: 6em;
+    animation: first-page 1.5s     ease-in-out;
+
 }
 
 .grid-container {
@@ -22,7 +24,6 @@
     border-radius: 5px;
     transition: all 0.25s ease-in-out;
 }
-
 
 .grid-container div img {
     width: 110%;
