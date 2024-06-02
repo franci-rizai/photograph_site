@@ -9,6 +9,75 @@ body{
     
 }
 
+
+
+@keyframes first-page {
+
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+
+/* Initial state for the .grid-container in .gallery-about */
+
+
+.gallery-about .grid-container div.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    transition: opacity 0.6s ease-out, transform 2s ease-out;
+}
+
+/* Final state for the .grid-container in .gallery-about */
+.gallery-about .grid-container div.show {
+    opacity: 1;
+    transform: translateY(0);
+    
+  filter: blur(0);
+    transition: filter 1s , opacity 0.6s ease-out, transform 1s ease-out;
+
+}
+
+.gallery-about .grid-container div.hidden:nth-child(1){
+  transition-delay: 1s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(2){
+  transition-delay: 0.8s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(3){
+  transition-delay: 0.6s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(4){
+  transition-delay: 0.4s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(5){
+  transition-delay: 0.2s;
+  
+}
+
+/* Existing styles for .commerce-div */
+.commerce-div.hidden {
+    opacity: 0;
+    transform: translateY(100px); /* Example transform for the original effect */
+    transition: opacity 1s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.commerce-div.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 @font-face {
     font-family: dancing ;
     src: url(fonts/DancingScript-VariableFont_wght.ttf);
@@ -19,25 +88,22 @@ body{
 }
 
 .div-first{
-  
+
     width: 100%;
     display: flex;
     flex-direction: column;
   align-items: center;
    justify-content: center;
-height: 100svh;
+height: 110svh;
     margin: 0;
-    margin-top: 8.5em;
 
+    animation: first-page 1.5s     ease-in-out;
 }
 
 
 
 header{
-  position: fixed;
-  top: 0;
-  background-color: rgb(255, 255, 255,0.8);
-  z-index: 100;
+  
   
   
     font-family: dancing;
@@ -51,10 +117,7 @@ header{
 
 
 }
-header:hover{
-  background-color: white;
-  transition: 0.2s;
-}
+
 
 header .big-menu-ul{
     display: flex;
