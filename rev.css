@@ -15,7 +15,7 @@
 }
 
 figure.snip1390 {
-   
+  
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
   overflow: hidden;
@@ -26,8 +26,8 @@ figure.snip1390 {
   color: #000000;
   text-align: center;
   font-size: 16px;
+  
   background-color: #ffffff;
-  padding: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
