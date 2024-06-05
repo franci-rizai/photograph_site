@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-
+@font-face {
+  font-family:review ;
+  src: url(./fonts/Rajdhani-Light.ttf);
+}
 .rev-sec{
     width: 100%;
     display: flex;
@@ -12,7 +15,7 @@
 }
 
 figure.snip1390 {
-    
+   
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
   overflow: hidden;
@@ -25,7 +28,6 @@ figure.snip1390 {
   font-size: 16px;
   background-color: #ffffff;
   padding: 30px;
-  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 70%);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -55,16 +57,18 @@ figure.snip1390 blockquote {
   font-size: 1.4em;
   padding: 45px 20px 40px 50px;
   margin-top: 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
   text-align: left;
-  
+  border-top: 2px solid;
+  border-bottom: 2px solid ;
   position: relative;
+  font-weight: 400;
+  font-family: review;
 }
 
 figure.snip1390 .profile {
-  width: 200px;
+  width: 400px;
+  aspect-ratio: 16/11;
+  object-fit: cover;
  
   display: inline-block;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
@@ -78,7 +82,7 @@ figure.snip1390 .profile {
 .title-testim{
     letter-spacing: 2px;
     font-size: 2.5em;
-   font-family: dancing;
+   font-family: Dancing;
    color: rgb(57, 62, 62);
    
 }

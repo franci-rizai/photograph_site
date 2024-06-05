@@ -1,6 +1,6 @@
 footer{
 padding-top: 0.025em;
-  width:100%;
+  
   background-color: rgba(250, 200, 200, 0.2);
   display: flex;
   flex-direction: column;
@@ -26,17 +26,30 @@ padding-top: 0.025em;
 }
 
 footer ul{
-  width: 90%;
+  gap: 2em;
   
-  font-family: dancing;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
   align-items: center;
-  justify-content: space-between;
-  letter-spacing: 2px;
-  
+  justify-content: space-around;
+  letter-spacing: 3px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 
 }
+
+@media only screen and (max-width: 700px) {
+footer ul{
+  flex-direction: column;
+ 
+
+}
+}
+
 
 
 

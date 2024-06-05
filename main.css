@@ -9,7 +9,14 @@ body{
     
 }
 
-
+@font-face {
+  font-family: headers;
+  src: url(./fonts/NanumMyeongjo-Regular.ttf);
+}
+@font-face {
+  font-family:review ;
+  src: url(./fonts/Rajdhani-Light.ttf);
+}
 
 @keyframes first-page {
 
@@ -68,19 +75,19 @@ body{
 }
 
 .gallery-about .grid-container div.hidden:nth-child(1){
-  transition-delay: 1s;
-  
-}
-.gallery-about .grid-container div.hidden:nth-child(2){
-  transition-delay: 0.8s;
-  
-}
-.gallery-about .grid-container div.hidden:nth-child(3){
   transition-delay: 0.6s;
   
 }
-.gallery-about .grid-container div.hidden:nth-child(4){
+.gallery-about .grid-container div.hidden:nth-child(2){
+  transition-delay: 0.5s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(3){
   transition-delay: 0.4s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(4){
+  transition-delay: 0.3s;
   
 }
 .gallery-about .grid-container div.hidden:nth-child(5){
@@ -122,16 +129,19 @@ height: 110svh;
     margin: 0;
 
     animation: first-page 1.5s     ease-in-out;
+    font-family: headers;
+    
 }
 
 
 
 header{
+
   animation: slide-down 2.5s     ease-in-out;
 
-  
+
   z-index: 100;
-    font-family: dancing;
+    letter-spacing: 2px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -168,6 +178,8 @@ header .big-menu-ul li{
  
 }
 .ham-menu-ul{
+  width: 100%;
+  padding: 0;
   visibility: hidden;
   z-index: 2;
   background-color: rgb(255, 255, 255,0.97);
@@ -183,7 +195,7 @@ header .big-menu-ul li{
   list-style-type: none;
 }
 .ham-menu-ul li{
-  
+ 
   margin-top: 1em;
   margin-bottom: 1em;
   color: white;
@@ -342,7 +354,9 @@ letter-spacing: 2px;
   transform: translateY(2px);
 }
  
-
+.fa-bars{
+  margin-right: 0.5em;
+}
  
 
   @media only screen and (max-width: 700px) {
@@ -354,7 +368,7 @@ letter-spacing: 2px;
 
     header{
       justify-content: space-between;
-     
+    
       
      
     }

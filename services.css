@@ -4,6 +4,8 @@
 
 .sec-services{
 
+    overflow-x:hidden;
+
     margin-top: 7em;
     display: grid;
     place-items: center;
@@ -16,29 +18,99 @@
 
 }
 
-.div-services.hidden{
+.div-services.hidden:nth-child(1){
     opacity: 0;
-    scale: 0;
-    filter: blur(10px) brightness(5);
+    transform: translateX(-100%);
+    filter: blur(10px) ;
     transition:all 1s ease-in-out;
 
 }
 
-.div-services.show{
-    filter: blur(0) brightness(1);
+.div-services.show:nth-child(1){
+    filter: blur(0) ;
+
+    transform: translateX(0);
+    opacity: 1;
+    transition:all 1s ease-in-out;
+
+}
+
+.div-services.hidden:nth-child(4){
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(10px) ;
+    transition:all 1s ease-in-out;
+
+}
+
+.div-services.show:nth-child(4){
+    filter: blur(0) ;
+
+    transform: translateX(0);
+    opacity: 1;
+    transition:all 1s ease-in-out;
+
+}
+.div-services.hidden:nth-child(2){
+    opacity: 0;
+    scale: 0;
+    filter: blur(10px) ;
+    transition:all 1s ease-in-out;
+
+}
+
+.div-services.show:nth-child(2){
+    filter: blur(0) ;
 
     scale: 1;
     opacity: 1;
     transition:all 1s ease-in-out;
 
 }
+.div-services.hidden:nth-child(5){
+    opacity: 0;
+    scale: 0;
+    filter: blur(10px) ;
+    transition:all 1s ease-in-out;
+
+}
+
+.div-services.show:nth-child(5){
+    filter: blur(0) ;
+
+    scale: 1;
+    opacity: 1;
+    transition:all 1s ease-in-out;
+
+}
+
+.div-services.hidden:nth-child(3),.div-services.hidden:nth-child(6){
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(10px) ;
+    transition:all 1s ease-in-out;
+
+}
+
+.div-services.show:nth-child(3),.div-services.show:nth-child(6) {
+    
+    filter: blur(0) brightness(1);
+
+    transform: translateX(0);
+    opacity: 1;
+    transition:all 1s ease-in-out;
+
+}
+
+
+
 .div-services{
     font-size: 1.3em;
     font-family: sans-serif;
     font-style: italic;
     line-height: 1.5;
-    border-right: 1px solid rgb(255, 0, 157);
-    border-bottom:1px solid rgb(25, 148, 201);
+    border: 3px solid gold;
+    margin-bottom: 1em;
     padding: 15px;
 }
 
