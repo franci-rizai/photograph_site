@@ -130,6 +130,7 @@ height: 110svh;
 
     animation: first-page 1.5s     ease-in-out;
     font-family: headers;
+    font-weight: normal;
     
 }
 

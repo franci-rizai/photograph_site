@@ -1,3 +1,7 @@
+@font-face {
+    font-family:review ;
+    src: url(./fonts/Rajdhani-Light.ttf);
+  }
 .about-div{
    
     width: 100%;
@@ -8,12 +12,13 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 flex-wrap: wrap;
+font-family: review;
+font-weight: bold;
 
    
 }
 .photo{
     animation: slide-down 1.5s     ease-in-out;
-    border: 5px solid gold;
     padding: 2em;
 
 }
@@ -27,13 +32,12 @@ flex-wrap: wrap;
 
     animation: slide-up 2s     ease-in-out;
 
-    width: 60%;
+    width: 50%;
     background-color: rgb(224, 132, 132,0.1);
 
     border-radius: 20px;
     padding: 2em;
-    letter-spacing: 2px;
-    font-family:sans-serif;
+    letter-spacing: 3px;
     font-size: 1.1em;
 
 }

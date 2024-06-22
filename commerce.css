@@ -1,28 +1,24 @@
 .commerce-div{
     
     margin: auto;
-   
-    letter-spacing: 1px;
+   letter-spacing: 2px;
     text-align: center;
-    background-color: hsla(180, 1%, 77%, 0.1);
     line-height: 2;
-    border-radius: 10px;
     min-height: 330px;
 
-    margin-top: -3em;
+   
     
   
 }
 
 .commerce-div h1{
-    font-family: yanone;
+    font-family: review;
     font-weight: normal;
-    letter-spacing: 7px;
-    font-style: italic;
+   
 }
 
-.commerce-div p:nth-child(4){
-    width: 80%;
+.commerce-div p{
+    width: 70%;
     text-align: center;
     margin: auto;
 }
