@@ -249,11 +249,12 @@ header img{
     height: 100svh;
 
      background-size: cover;
-     background-image: url(images/backgg.png);
+     background-image: url(images/backgphone.png);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
      background-attachment: fixed;
+     
     
 }
 
@@ -297,17 +298,24 @@ font-size: 3em;
     
   }
   .wrap-but-1 {
-    animation: slide-up 2.5s     ease-in-out;
-
+    
+animation-name: first-page ;
+animation-duration: 5s;
     position: relative;
     
-    top: -100px;
+    top: 100px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     
   }
+  a.button-link {
+    display: inline-block; /* or display: block; depending on your layout needs */
+    text-decoration: none; /* Remove underline by default */
+    color: inherit; /* Inherit text color */
+  }
+  
   
   
 /* CSS */

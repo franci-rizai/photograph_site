@@ -3,69 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 10px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        label {
-            margin-bottom: 10px;
-            display: block;
-        }
-    </style>
+    <title>Book</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-
-<div class="container">
-    <h2>Email Form</h2>
-    <form action="email.php" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name.." required>
-        
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Your email address.." required>
-
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject of the email.." required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
-
-        <input type="submit" value="Submit">
+    <h2>Book your Photoshooting</h2>
+    <form action="mail.php" method="post">
+        <div class="namail">
+            <div>
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" name="name" placeholder="Maria" required><br><br>
+            </div>
+            <div>
+                <label for="email">EMAIL</label><br>
+                <input type="email" id="email" name="email" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br><br>
+            </div>
+        </div>
+        <div>
+            <label for="phone">PHONE</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+001234567890"><br><br>
+        </div>
+        <div>
+            <label for="persons">NUMBER OF ADULTS</label><br>
+            <input type="number" id="persons" name="persons" min="1" required><br><br>
+        </div>
+        <div>
+            <label for="kids">NUMBER OF CHILDREN</label><br>
+            <input type="number" id="kids" name="kids" min="0"><br><br>
+        </div>
+        <div>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Write your message..." rows="4" required></textarea><br><br>
+        </div>
+        <div>
+            <label for="request">Specific Requests:</label><br>
+            <textarea id="request" name="request" placeholder="I would like..." rows="4"></textarea><br><br>
+        </div>
+        <div>
+            <input type="submit" value="Book Now">
+        </div>
     </form>
-</div>
-
+    <script>
+        // Check if the status query parameter is set to success
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('status') === 'success') {
+            alert('Your message was sent successfully! I will text you soon.');
+        }
+    </script>
 </body>
 </html>
