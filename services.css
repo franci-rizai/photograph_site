@@ -49,10 +49,10 @@ aspect-ratio: 16/6;
 }
 .things-to-know p{
 
-    font-size: 1.2em;
+    font-size: 1em;
     font-family:review;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: center;
     
 }

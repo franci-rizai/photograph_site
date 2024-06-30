@@ -249,7 +249,7 @@ header img{
     height: 100svh;
 
      background-size: cover;
-     background-image: url(images/phoneimg1.png);
+     background-image: url(images/backgg.png);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
@@ -299,8 +299,8 @@ font-size: 3em;
   }
   .wrap-but-1 {
     
-animation-name: first-page ;
-animation-duration: 5s;
+
+
     position: relative;
     
     top: 100px;
@@ -383,9 +383,9 @@ letter-spacing: 2px;
       height: 100svh;
   
        background-size: cover;
-       background-image: url(images/phoneimg1.png);
+       background-image: url(images/phoneimg2.png);
        background-repeat: no-repeat;
-       background-position: 0px 0px 1000px 0px;
+       background-position:center;
        background-size: cover;
        background-attachment: fixed;
        
