@@ -14,27 +14,13 @@
     <title>HOME</title>
 </head>
    <body>
-    <header>
-      <div>
-        <a href="index.html">  <img src="images/logo.png" alt="logo"></a>
-      </div>
-<ul class="big-menu-ul">
-  <li><a style="text-decoration:none; color:black" href="index.html">HOME</a></li>
-  <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
   
-  <li><a style="text-decoration:none; color:black" href="about.html">ABOUT</a></li>
-
- 
-</ul>
-
-
-
-<div class="spans-div">
-
-<i class="fa-solid fa-bars"></i>
-
-
-  <ul class="ham-menu-ul">
+<main class="div-first hidden">
+    <header>
+        <div>
+          <a href="index.html">  <img src="images/logo.png" alt="logo"></a>
+        </div>
+<ul class="big-menu-ul">
     <li><a style="text-decoration:none; color:black" href="index.html">HOME</a></li>
     <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
     
@@ -43,11 +29,25 @@
    
 </ul>
 
+
+
+<div class="spans-div">
+
+  <i class="fa-solid fa-bars"></i>
+ 
+
+    <ul class="ham-menu-ul">
+      <li><a style="text-decoration:none; color:black" href="index.html">HOME</a></li>
+      <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
+      
+      <li><a style="text-decoration:none; color:black" href="about.html">ABOUT</a></li>
+
+     
+  </ul>
+  
 </div>
 
-  </header>
-<main class="div-first hidden">
-    
+    </header>
     <script> 
      const hamMenu = document.querySelector('.fa-bars');
      const menuList = document.querySelector('.ham-menu-ul')
