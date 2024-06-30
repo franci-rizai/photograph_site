@@ -4,7 +4,9 @@ html{
 body{
  
    
-  
+  display: flex;
+  flex-direction: column;
+ 
     margin: 0;
     
 }
@@ -381,7 +383,7 @@ letter-spacing: 2px;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   background-attachment: fixed;
+   background-attachment:scroll;
   
 }
   
