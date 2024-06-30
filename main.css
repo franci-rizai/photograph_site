@@ -246,14 +246,14 @@ header img{
     position: relative;
      background-repeat: no-repeat;
      width: 100%;
-    height: 100svh;
+    height: 100vh;
 
      background-size: cover;
      background-image: url(images/backgg.png);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
-     background-attachment: fixed;
+   
      
     
 }
@@ -380,7 +380,7 @@ letter-spacing: 2px;
       position: relative;
        background-repeat: no-repeat;
        width: 100%;
-      height: 100svh;
+      height: 100vh;
   
        background-image: url(images/phoneimg2.png);
        
