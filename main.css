@@ -248,13 +248,14 @@ header img{
     position: relative;
      background-repeat: no-repeat;
      width: 100%;
-  
+    height: 100vh;
 
      background-size: cover;
      background-image: url(images/backgphone.png);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
+     background-attachment: fixed;
     
 }
 
@@ -372,15 +373,17 @@ letter-spacing: 2px;
 
     
 .main-div{
+  position: relative;
    background-repeat: no-repeat;
    width: 100%;
   height: 100vh;
-z-index: 12412421;
+
    background-size: cover;
    background-image: url(images/phoneimg2.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   background-attachment:scroll;
   
 }
   
