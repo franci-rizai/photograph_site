@@ -1,141 +1,273 @@
-html {
-  scroll-behavior: smooth;
+html{
+    scroll-behavior: smooth;
 }
-
-body {
-  margin: 0;
+body{
+ 
+   
+  
+    margin: 0;
+    
 }
 
 @font-face {
   font-family: headers;
   src: url(./fonts/NanumMyeongjo-Regular.ttf);
 }
-
 @font-face {
-  font-family: review;
+  font-family:review ;
   src: url(./fonts/Rajdhani-Light.ttf);
 }
 
 @keyframes first-page {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
 
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
 @keyframes slide-down {
-  from {
-      transform: translateY(-100%);
+  from{
+    transform: translatey(-100%);
   }
-  to {
-      transform: translateY(0%);
+  to{
+    transform: translatey(0%);
+
   }
 }
 
-.div-first {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+@keyframes slide-up {
+  0%{
+    transform: translatey(200%);
+  }
+  40%{
+    transform: translatey(-30%);
+
+  }
+  100%{
+    transform: translatey(0%);
+
+  }
+}
+
+
+
+/* Initial state for the .grid-container in .gallery-about */
+
+
+.gallery-about .grid-container div.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    transition: opacity 0.6s ease-out, transform 2s ease-out;
+}
+
+/* Final state for the .grid-container in .gallery-about */
+.gallery-about .grid-container div.show {
+    opacity: 1;
+    transform: translateY(0);
+    
+  filter: blur(0);
+    transition: filter 1s , opacity 0.6s ease-out, transform 1s ease-out;
+
+}
+
+.gallery-about .grid-container div.hidden:nth-child(1){
+  transition-delay: 0.6s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(2){
+  transition-delay: 0.5s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(3){
+  transition-delay: 0.4s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(4){
+  transition-delay: 0.3s;
+  
+}
+.gallery-about .grid-container div.hidden:nth-child(5){
+  transition-delay: 0.2s;
+  
+}
+
+/* Existing styles for .commerce-div */
+.commerce-div.hidden {
+    opacity: 0;
+    transform: translateY(100px); /* Example transform for the original effect */
+    transition: opacity 1s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.commerce-div.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@font-face {
+    font-family: dancing ;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: yanone ;
+    src: url(fonts/YanoneKaffeesatz-VariableFont_wght.ttf);
+}
+
+.div-first{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh; /* Use vh instead of svh */
-  margin: 0;
-  animation: first-page 1.5s ease-in-out;
-  font-family: headers;
-  font-weight: normal;
+   justify-content: center;
+height: 100vh;
+    margin: 0;
+
+    animation: first-page 1.5s     ease-in-out;
+    font-family: headers;
+    font-weight: normal;
+    
 }
 
-header {
-  animation: slide-down 2.5s ease-in-out;
+
+
+header{
+
+  animation: slide-down 2.5s     ease-in-out;
+
+
   z-index: 100;
-  letter-spacing: 2px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  transition: 0.2s;
-  background-color: rgba(255, 255, 255, 0.9); /* Add background for better visibility */
-  position: fixed; /* Fix the header at the top */
-  top: 0;
-  padding: 1em 0; /* Add some padding */
+    letter-spacing: 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.2s;
+
+   
+
+
 }
 
-header .big-menu-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  gap: 3em;
-  font-size: 1.1em;
+
+header .big-menu-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 3em;
+    font-size: 1.1em;
+    
 }
 
-header .big-menu-ul li {
-  position: relative;
-  cursor: pointer;
+header .big-menu-ul li{
+    position: relative;
+    cursor: pointer;
+  
 }
 
-.spans-div {
-  display: none;
+.spans-div{
+  
+  
+  display:none;
+  
+ 
 }
-
-.ham-menu-ul {
+.ham-menu-ul{
   width: 100%;
   padding: 0;
   visibility: hidden;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgb(255, 255, 255,0.97);
   top: 80px;
-  right: 0;
-  left: 0;
-  border-radius: 10px;
-  opacity: 0;
-  transition: 0.3s;
+ right: 0;
+ left: 0;
+ border-radius: 10px;
+ opacity: 0;
+ transition: 0.3s;
   position: absolute;
   text-align: center;
+ 
   list-style-type: none;
 }
-
-.ham-menu-ul li {
+.ham-menu-ul li{
+ 
   margin-top: 1em;
   margin-bottom: 1em;
   color: white;
   font-size: 1.5em;
 }
 
-.fa-bars {
+
+.fa-bars{
   cursor: pointer;
-  font-size: 2.5em;
-  color: rgb(75, 117, 142);
+font-size: 2.5em;
+color: rgb(75, 117, 142);
 }
 
-.ham-menu-ul.active {
+.ham-menu-ul.active{
   visibility: visible;
-  transition: 0.3s;
-  opacity: 1;
+
+transition: 0.3s;
+opacity: 1;
 }
 
-header img {
-  width: 130px;
+
+.big-menu-ul li::after{
+    content: "";
+    position: absolute;
+    width: 0;
+   height: 0.1px;
+   background-color: black;
+   bottom: 0;
+   left: 0;
+   transition: 0.2s;
+
+
+}
+.big-menu-ul li:hover:after{
+    width: 100%;
+    transition: 0.2s;
 }
 
-.main-div {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Use vh instead of svh */
-  background-size: cover;
-  background-image: url(images/backgg.png);
-  background-repeat: no-repeat;
-  background-position: center;
+
+header img{
+    width: 130px;
+   
+    
 }
+
+.main-div{
+    position: relative;
+     background-repeat: no-repeat;
+     width: 100%;
+    height: 100vh;
+
+     background-size: cover;
+     background-image: url(images/backgg.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+   
+     
+    
+}
+
 
 .first-image {
   width: 100%;
-  height: 100vh; /* Use vh instead of svh */
+  height: 100vh;/* Set the height to cover the full viewport height */
   position: absolute;
-  object-fit: cover;
+  object-fit: cover;/* Ensures the image covers the entire area, maintaining aspect ratio */
+  
+  
 }
+
 
 .slogan-main{
     background-color: rgba(225, 240, 240, 0.8);
@@ -242,24 +374,39 @@ letter-spacing: 2px;
   margin-right: 0.5em;
 }
  
-@media only screen and (max-width: 700px) {
-  .main-div {
-      background-image: url(images/phoneimg2.png);
-  }
 
-  header .big-menu-ul {
+  @media only screen and (max-width: 700px) {
+    .main-div{
+      position: relative;
+       background-repeat: no-repeat;
+       width: 100%;
+      height: 100vh;
+  
+       background-image: url(images/phoneimg2.png);
+       
+       
+      
+  }
+  
+    header .big-menu-ul{
       display: none;
-  }
+    }
+   
 
-  header {
+    header{
       justify-content: space-between;
-  }
-
-  .spans-div {
+    
+      
+     
+    }
+   
+    .spans-div{
       display: block;
-  }
-
-  .ham-menu-ul {
+    }
+    .slogan-main{
+      font-size: 0.7em;
+    }
+    .ham-menu-ul{
       display: block;
+    }
   }
-}
