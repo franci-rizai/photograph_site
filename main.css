@@ -220,6 +220,7 @@ header img {
   background-image: url(images/backgphone.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
 
 }
