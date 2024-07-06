@@ -1,321 +1,268 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
- 
-   
+
+body {
   display: flex;
   flex-direction: column;
- 
-    margin: 0;
-    
+  margin: 0;
 }
 
 @font-face {
   font-family: headers;
   src: url(./fonts/NanumMyeongjo-Regular.ttf);
 }
+
 @font-face {
-  font-family:review ;
+  font-family: review;
   src: url(./fonts/Rajdhani-Light.ttf);
 }
 
 @keyframes first-page {
-
-  from{
-    opacity: 0;
+  from {
+      opacity: 0;
   }
-  to{
-    opacity: 1;
+  to {
+      opacity: 1;
   }
-  
 }
-
 
 @keyframes slide-up {
-  0%{
-    transform: translatey(200%);
+  0% {
+      transform: translateY(200%);
   }
-  40%{
-    transform: translatey(-30%);
-
+  40% {
+      transform: translateY(-30%);
   }
-  100%{
-    transform: translatey(0%);
-
+  100% {
+      transform: translateY(0%);
   }
 }
 
-
-
 /* Initial state for the .grid-container in .gallery-about */
-
-
 .gallery-about .grid-container div.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-    filter: blur(5px);
-    transition: opacity 0.6s ease-out, transform 2s ease-out;
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(5px);
+  transition: opacity 0.6s ease-out, transform 2s ease-out;
 }
 
 /* Final state for the .grid-container in .gallery-about */
 .gallery-about .grid-container div.show {
-    opacity: 1;
-    transform: translateY(0);
-    
+  opacity: 1;
+  transform: translateY(0);
   filter: blur(0);
-    transition: filter 1s , opacity 0.6s ease-out, transform 1s ease-out;
-
+  transition: filter 1s, opacity 0.6s ease-out, transform 1s ease-out;
 }
 
-.gallery-about .grid-container div.hidden:nth-child(1){
+.gallery-about .grid-container div.hidden:nth-child(1) {
   transition-delay: 0.6s;
-  
 }
-.gallery-about .grid-container div.hidden:nth-child(2){
+
+.gallery-about .grid-container div.hidden:nth-child(2) {
   transition-delay: 0.5s;
-  
 }
-.gallery-about .grid-container div.hidden:nth-child(3){
+
+.gallery-about .grid-container div.hidden:nth-child(3) {
   transition-delay: 0.4s;
-  
 }
-.gallery-about .grid-container div.hidden:nth-child(4){
+
+.gallery-about .grid-container div.hidden:nth-child(4) {
   transition-delay: 0.3s;
-  
 }
-.gallery-about .grid-container div.hidden:nth-child(5){
+
+.gallery-about .grid-container div.hidden:nth-child(5) {
   transition-delay: 0.2s;
-  
 }
 
 /* Existing styles for .commerce-div */
 .commerce-div.hidden {
-    opacity: 0;
-    transform: translateY(100px); /* Example transform for the original effect */
-    transition: opacity 1s ease-in-out, transform 0.8s ease-in-out;
+  opacity: 0;
+  transform: translateY(100px); /* Example transform for the original effect */
+  transition: opacity 1s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .commerce-div.show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
-
-
 
 @font-face {
-    font-family: dancing ;
-    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+  font-family: dancing;
+  src: url(fonts/DancingScript-VariableFont_wght.ttf);
 }
+
 @font-face {
-    font-family: yanone ;
-    src: url(fonts/YanoneKaffeesatz-VariableFont_wght.ttf);
+  font-family: yanone;
+  src: url(fonts/YanoneKaffeesatz-VariableFont_wght.ttf);
 }
 
-.div-first{
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.div-first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-   justify-content: center;
-height: 100vh;
-    margin: 0;
-
-    animation: first-page 1.5s     ease-in-out;
-    font-family: headers;
-    font-weight: normal;
-    
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  animation: first-page 1.5s ease-in-out;
+  font-family: headers;
+  font-weight: normal;
 }
 
-
-
-header{
-
- 
-
-
+header {
   z-index: 100;
-    letter-spacing: 2px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    transition: 0.2s;
-
-   
-
-
+  letter-spacing: 2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.2s;
+  position: relative; /* Ensure header does not follow scroll */
+  background-color: white; /* Ensure visibility with background color */
+  padding: 1em 0; /* Adjust padding for better display */
 }
 
-
-header .big-menu-ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    gap: 3em;
-    font-size: 1.1em;
-    
+header .big-menu-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 3em;
+  font-size: 1.1em;
 }
 
-header .big-menu-ul li{
-    position: relative;
-    cursor: pointer;
-  
+header .big-menu-ul li {
+  position: relative;
+  cursor: pointer;
 }
 
-.spans-div{
-  
-  
-  display:none;
-  
- 
+.spans-div {
+  display: none;
 }
-.ham-menu-ul{
+
+.ham-menu-ul {
   width: 100%;
   padding: 0;
   visibility: hidden;
   z-index: 2;
-  background-color: rgb(255, 255, 255,0.97);
+  background-color: rgb(255, 255, 255, 0.97);
   top: 80px;
- right: 0;
- left: 0;
- border-radius: 10px;
- opacity: 0;
- transition: 0.3s;
+  right: 0;
+  left: 0;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.3s;
   position: absolute;
   text-align: center;
- 
   list-style-type: none;
 }
-.ham-menu-ul li{
- 
+
+.ham-menu-ul li {
   margin-top: 1em;
   margin-bottom: 1em;
   color: white;
   font-size: 1.5em;
 }
 
-
-.fa-bars{
+.fa-bars {
   cursor: pointer;
-font-size: 2.5em;
-color: rgb(75, 117, 142);
+  font-size: 2.5em;
+  color: rgb(75, 117, 142);
 }
 
-.ham-menu-ul.active{
+.ham-menu-ul.active {
   visibility: visible;
-
-transition: 0.3s;
-opacity: 1;
+  transition: 0.3s;
+  opacity: 1;
 }
 
-
-.big-menu-ul li::after{
-    content: "";
-    position: absolute;
-    width: 0;
-   height: 0.1px;
-   background-color: black;
-   bottom: 0;
-   left: 0;
-   transition: 0.2s;
-
-
-}
-.big-menu-ul li:hover:after{
-    width: 100%;
-    transition: 0.2s;
+.big-menu-ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.1px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transition: 0.2s;
 }
 
-
-header img{
-    width: 130px;
-   
-    
+.big-menu-ul li:hover:after {
+  width: 100%;
+  transition: 0.2s;
 }
 
-.main-div{
-    position: relative;
-     background-repeat: no-repeat;
-     width: 100%;
-    height: 100vh;
-
-     background-size: cover;
-     background-image: url(images/backgphone.png);
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-    
+header img {
+  width: 130px;
 }
 
-
-
-
-
-.slogan-main{
-    background-color: rgba(225, 240, 240, 0.8);
-    height: fit-content;
-    color: rgb(95, 90, 90);
-    
-    text-align: center;
-    width: 100%;
-   
-}
-.slogan-main h1{
-font-size: 3em;
-}
-.slogan-main p{
-    font-size: 1.4em;
+.main-div {
+  position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(images/backgphone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 80px; /* Add margin-top to make space for the header */
 }
 
+.slogan-main {
+  background-color: rgba(225, 240, 240, 0.8);
+  height: fit-content;
+  color: rgb(95, 90, 90);
+  text-align: center;
+  width: 100%;
+}
+
+.slogan-main h1 {
+  font-size: 3em;
+}
+
+.slogan-main p {
+  font-size: 1.4em;
+}
 
 /* button */
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.wrap-but-1 {
+  animation-name: first-page;
+  animation-duration: 5s;
+  position: relative;
+  top: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  
-  .wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .wrap-but-1 {
-    
-animation-name: first-page ;
-animation-duration: 5s;
-    position: relative;
-    
-    top: 100px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  a.button-link {
-    display: inline-block; /* or display: block; depending on your layout needs */
-    text-decoration: none; /* Remove underline by default */
-    color: inherit; /* Inherit text color */
-  }
-  
-  
-  
-/* CSS */
+a.button-link {
+  display: inline-block; /* or display: block; depending on your layout needs */
+  text-decoration: none; /* Remove underline by default */
+  color: inherit; /* Inherit text color */
+}
+
 .button-30 {
   align-items: center;
   appearance: none;
   background-color: #ffffff;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395A;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 58px;
   justify-content: center;
   line-height: 1;
@@ -326,17 +273,16 @@ animation-duration: 5s;
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow 0.15s, transform 0.15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 28px;
   font-family: yanone;
-width: 200px;
-letter-spacing: 2px;
-
+  width: 200px;
+  letter-spacing: 2px;
   margin-top: auto;
   margin-bottom: 2em;
 }
@@ -354,48 +300,41 @@ letter-spacing: 2px;
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
- 
-.fa-bars{
+
+.fa-bars {
   margin-right: 0.5em;
 }
- 
 
-  @media only screen and (max-width: 700px) {
-
-    
-.main-div{
-  position: relative;
-   background-repeat: no-repeat;
-   width: 100%;
-  height: 100vh;
-
-   background-size: cover;
-   background-image: url(images/phoneimg2.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-  
-}
-  
-    header .big-menu-ul{
-      display: none;
-    }
-   
-
-    header{
-      justify-content: space-between;
-    
-      
-     
-    }
-   
-    .spans-div{
-      display: block;
-    }
-    .slogan-main{
-      font-size: 0.7em;
-    }
-    .ham-menu-ul{
-      display: block;
-    }
+@media only screen and (max-width: 700px) {
+  .main-div {
+      position: relative;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-image: url(images/phoneimg2.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
   }
+
+  header .big-menu-ul {
+      display: none;
+  }
+
+  header {
+      justify-content: space-between;
+  }
+
+  .spans-div {
+      display: block;
+  }
+
+  .slogan-main {
+      font-size: 0.7em;
+  }
+
+  .ham-menu-ul {
+      display: block;
+  }
+}
