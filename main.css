@@ -118,8 +118,7 @@ header {
   align-items: center;
   justify-content: space-around;
   transition: 0.2s;
-  position:relative; /* Ensure header is fixed at the top */
-  inset: 0;
+ 
   background-color: white; /* Ensure visibility with background color */
   padding: 1em 0; /* Adjust padding for better display */
   background-color: red;
@@ -150,7 +149,7 @@ header .big-menu-ul li {
   visibility: hidden;
   z-index: 2;
   background-color: rgb(255, 255, 255, 0.97);
-  top: 80px;
+  top: 0px;
   right: 0;
   left: 0;
   border-radius: 10px;
