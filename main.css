@@ -30,15 +30,7 @@ body{
   }
   
 }
-@keyframes slide-down {
-  from{
-    transform: translatey(-100%);
-  }
-  to{
-    transform: translatey(0%);
 
-  }
-}
 
 @keyframes slide-up {
   0%{
@@ -140,7 +132,7 @@ height: 100vh;
 
 header{
 
-  animation: slide-down 2.5s     ease-in-out;
+ 
 
 
   z-index: 100;
