@@ -14,13 +14,27 @@
     <title>HOME</title>
 </head>
    <body>
-  
-<main class="div-first hidden">
     <header>
-        <div>
-          <a href="index.html">  <img src="images/logo.png" alt="logo"></a>
-        </div>
+      <div>
+        <a href="index.html">  <img src="images/logo.png" alt="logo"></a>
+      </div>
 <ul class="big-menu-ul">
+  <li><a style="text-decoration:none; color:black" href="index.html">HOME</a></li>
+  <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
+  
+  <li><a style="text-decoration:none; color:black" href="about.html">ABOUT</a></li>
+
+ 
+</ul>
+
+
+
+<div class="spans-div">
+
+<i class="fa-solid fa-bars"></i>
+
+
+  <ul class="ham-menu-ul">
     <li><a style="text-decoration:none; color:black" href="index.html">HOME</a></li>
     <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
     
@@ -29,33 +43,13 @@
    
 </ul>
 
-
-
-<div class="spans-div">
-
-  <i class="fa-solid fa-bars"></i>
- 
-
-    <ul class="ham-menu-ul">
-      <li><a style="text-decoration:none; color:black" href="index.html">HOME</a></li>
-      <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
-      
-      <li><a style="text-decoration:none; color:black" href="about.html">ABOUT</a></li>
-
-     
-  </ul>
-  
 </div>
 
-    </header>
-    <script> 
-     const hamMenu = document.querySelector('.fa-bars');
-     const menuList = document.querySelector('.ham-menu-ul')
-     hamMenu.addEventListener('click', () => {
-      menuList.classList.toggle('active')
-     })
-    
-    </script>
+  </header>
+  
+<main class="div-first hidden">
+   
+   
 <div class="main-div">
 
   
@@ -141,7 +135,7 @@
       <h1>Contact Me</h1>
       
       <a style="text-decoration:none; color:black;" href="mailto:info@kefaloniaphotoshoots.com"><p><i class="fa-solid fa-envelope"></i> info@kefaloniaphotoshoots.com</p></a>
-      <a  style="text-decoration:none; color:black;"  href="https://api.whatsapp.com/send?phone=6984831597"><p><i class="fa-solid fa-phone"></i> +30 698 483 1597 &nbsp; (IMessage/Whatsapp/VIber)</p></a>
+      <a  style="text-decoration:none; color:black;"  href="whatsapp://send?abid=+306984831597&text=I woul'd like to make some questions."><p><i class="fa-solid fa-phone"></i> +30 698 483 1597 &nbsp; (IMessage/Whatsapp/VIber)</p></a>
     </div>
     </div>
 
@@ -361,7 +355,14 @@
       
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-     
+      <script> 
+        const hamMenu = document.querySelector('.fa-bars');
+        const menuList = document.querySelector('.ham-menu-ul')
+        hamMenu.addEventListener('click', () => {
+         menuList.classList.toggle('active')
+        })
+       
+       </script>
       <script src="scroll.js"></script>
 </body>
 </html>
