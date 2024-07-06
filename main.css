@@ -118,7 +118,9 @@ header {
   align-items: center;
   justify-content: space-around;
   transition: 0.2s;
-  position: relative; /* Ensure header does not follow scroll */
+  position: fixed; /* Ensure header is fixed at the top */
+  top: 0; /* Align header to the top */
+  left: 0;
   background-color: white; /* Ensure visibility with background color */
   padding: 1em 0; /* Adjust padding for better display */
 }
