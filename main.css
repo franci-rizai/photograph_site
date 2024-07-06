@@ -122,6 +122,8 @@ header {
   inset: 0;
   background-color: white; /* Ensure visibility with background color */
   padding: 1em 0; /* Adjust padding for better display */
+  background-color: red;
+
 }
 
 header .big-menu-ul {
