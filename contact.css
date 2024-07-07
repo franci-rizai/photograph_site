@@ -86,6 +86,9 @@ input[type="submit"]{
   width: 100%;
   cursor: pointer;
   border-radius: 5px;
+  outline: none;
+  border: none;
+  color: back;
 
 
 }
@@ -95,20 +98,7 @@ input[type="submit"]{
   text-align: center;
 }
 
-button{
-  font-size: 1.2em;
-  background-color: rgb(255, 255, 247);
-  letter-spacing: 2px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  
-  width: 40%;
- text-align: center;
-  height: 50px;
-  cursor: pointer;
-  border-radius: 5px;
- 
-}
+
 
 @media (max-width: 968px) {
   .namail {
