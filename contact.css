@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100svh; /* Use 100svh to make sure it takes up the full viewport height */
+  height: 100vh; /* Use 100svh to make sure it takes up the full viewport height */
   font-family: sans-serif;
   font-size: 1.3em;
   background-image: url(images//DSC01606-Edit.jpg);
@@ -13,7 +13,7 @@ body {
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
-     background-attachment: fixed;
+  
      
   
 }
@@ -45,6 +45,7 @@ form {
   justify-content: center;
   border-radius: 10px;
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  font-family: serif;
 }
 
 form div {
@@ -74,6 +75,7 @@ form input, form textarea {
 form textarea {
   height: 75PX;
   resize: vertical;
+font-family: serif;
 }
 
 input[type="submit"] {
@@ -84,10 +86,8 @@ input[type="submit"] {
   width: 100%;
   cursor: pointer;
   border-radius: 5px;
-  padding: 0.5em; /* Reduced padding to fit content within viewport */
-  border: none;
-  margin-top: 0.5em; /* Adjusted margin to fit content within viewport */
-  height: 3em;
+
+
 }
 
 @media (max-width: 968px) {
