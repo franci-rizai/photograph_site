@@ -12,7 +12,7 @@ body {
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
-    
+    padding-bottom: 2em;
   
      
   
@@ -36,7 +36,7 @@ h2 {
 
 form {
   margin-top: 1em;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   max-width: 700px;
   padding: 1em; /* Reduced padding to fit content within viewport */

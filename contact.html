@@ -5,8 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+
 </head>
 <body>
+    <header style="font-family: headers;
+    font-weight: normal;">
+        <div>
+          <a href="index.html">  <img src="images/logo.png" alt="logo"></a>
+                </div>
+<ul class="big-menu-ul">
+    <li><a style="text-decoration:none; color:black" href="index.html">HOME</a></li>
+    <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
+
+    
+    <li><a style="text-decoration:none; color:black" href="about.html">ABOUT</a></li>
+
+   
+</ul>
+
+
+
+<div class="spans-div">
+
+  <i class="fa-solid fa-bars"></i>
+ 
+
+    <ul class="ham-menu-ul">
+      <li><a style="text-decoration:none; color:black" href="index.html">HOME</a></li>
+      <li><a style="text-decoration:none; color:black" href="gallery.html">GALLERY</a></li>
+
+      
+      <li><a style="text-decoration:none; color:black" href="about.html">ABOUT</a></li>
+
+     
+  </ul>
+  
+</div>
+
+    </header>
    
     <form action="mail.php" method="post">
         <div class="namail">
@@ -44,7 +83,14 @@
         </div>
        
     </form>
-   
+    <script> 
+        const hamMenu = document.querySelector('.fa-bars');
+        const menuList = document.querySelector('.ham-menu-ul')
+        hamMenu.addEventListener('click', () => {
+         menuList.classList.toggle('active')
+        })
+       
+       </script>
     <script>
         // Check if the status query parameter is set to success
         const urlParams = new URLSearchParams(window.location.search);
