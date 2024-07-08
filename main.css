@@ -134,7 +134,7 @@ header {
  
   background-color: white; /* Ensure visibility with background color */
   padding: 1em 0; /* Adjust padding for better display */
-
+font-family:headers  ;
 }
 
 header .big-menu-ul {
