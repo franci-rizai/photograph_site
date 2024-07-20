@@ -20,10 +20,7 @@ font-weight: bold;
 .photo{
     animation: slide-down 1.5s     ease-in-out;
     padding: 1em;
-    border-top: 7px double rgba(255, 217, 0,0.5);
-    border-bottom: 7px double rgba(255, 217, 0,0.5);
-    border-right: 7px double rgba(255, 217, 0,0.5);
-    border-left: 7px double rgba(255, 217, 0,0.5);
+   border: 7px double #f5e1ce;
 
 margin-left: 1em;
 margin-right: 1em;
@@ -61,8 +58,9 @@ text-align: center;
 margin-top: 1em;
     width: 80%;
     
-    border-top: 5px double gold;
-    border-bottom: 5px double gold;
+    border-top:  2px solid #f5e1ce;
+    border-bottom: 2px double #f5e1ce;   
+
     padding: 2em;
     
     letter-spacing: 3px;

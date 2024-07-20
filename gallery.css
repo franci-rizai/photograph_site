@@ -9,7 +9,7 @@
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -23,7 +23,7 @@
 .grid-container div {
   
     
-    margin: 0 1.5rem 1.5rem 0;
+    margin: 0 0rem 1.5rem 0;
     display: inline-block;
    
     
