@@ -137,6 +137,11 @@ header {
 font-family:headers  ;
 }
 
+.big-menu-ul.forind{
+  justify-content: space-around;
+  filter: drop-shadow(1px 3px 5px white) ;
+  width: 100%;
+}
 header .big-menu-ul {
   display: flex;
   align-items: center;
@@ -174,7 +179,6 @@ header .big-menu-ul li {
 }
 .ham-menu-ul.forind{
  
-
 top:50px;
 }
 
@@ -202,7 +206,7 @@ top:50px;
   position: absolute;
   width: 0;
   height: 0.1px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   bottom: 0;
   left: 0;
   transition: 0.2s;
