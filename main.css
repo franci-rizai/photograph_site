@@ -153,6 +153,8 @@ header .big-menu-ul li {
 
 .spans-div {
   display: none;
+  width: 100%;
+  background-color: red;
 }
 
 .ham-menu-ul {
@@ -164,12 +166,16 @@ header .big-menu-ul li {
   top: 100px;
   right: 0;
   left: 0;
-  border-radius: 10px;
   opacity: 0;
   transition: 0.3s;
   position: absolute;
   text-align: center;
   list-style-type: none;
+}
+.ham-menu-ul.forind{
+ 
+
+top:50px;
 }
 
 .ham-menu-ul li {
@@ -206,7 +212,10 @@ header .big-menu-ul li {
   width: 100%;
   transition: 0.2s;
 }
-
+header.forind{
+  position: absolute;
+  background-color: transparent;
+}
 header img {
   width: 130px;
 }
@@ -329,6 +338,13 @@ a.button-link {
   margin-right: 1em;
   width: 55px;
   cursor: pointer;
+  
+}
+
+.bar.forind{
+  position: absolute;
+  right: 0px;
+  top:0px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -340,7 +356,7 @@ a.button-link {
       background-size: cover;
       background-image: url(images/phoneimg1.png);
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: 60%  ;
       background-size: cover;
       background-attachment:initial;
 
@@ -349,6 +365,11 @@ a.button-link {
   header .big-menu-ul {
       display: none;
   }
+  header.forind{
+    position: absolute;
+    background-color: transparent;
+  }
+
 
   header {
       justify-content: space-between;
